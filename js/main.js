@@ -2,7 +2,7 @@ const sidebarCollapse = document.querySelector("#sidebarCollapse");
 const sidebar         = document.querySelector("#sidebar");
 const main            = document.querySelector("main");
 const frame           = document.querySelector("iframe");
-const linkStart       = "https://js0224.github.io/view/";
+const linkStart       = "https://js0224.github.io/resume/view/";
 const menuTitle       = main.querySelector(".title-container").querySelector('h3');
 
 const ACTIVE_CL = 'active';
