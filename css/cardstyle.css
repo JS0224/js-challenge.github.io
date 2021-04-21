@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+.box {
+   display:flex;
+   border-top:1px solid gray;
+   border-bottom:1px solid gray;
+   padding: 10px 20px;
+   margin-top:10px;
+}
+
+.box h4 {
+  width:25%;
+  /*background-color: tomato;*/
+  margin-top:0px;
+  margin-bottom: 0px;
+  font-family: Helvetica;
+  padding: 3px;
+}
+
+.box .box-content {
+  width:75%;
+  /*background-color:pink;*/
+  font-family: Helvetica;
+  list-style: none;
+  text-indent: -12px; /* key property */
+  margin-left: 12px; /* key property */
+}
+
+.box .box-content li::before {
+  content: "\2022";
+  color: gray;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+.box .box-content li {
+  padding: 5px 0px 5px 5px;
+  margin : 1px 3px;
+  font-size: 15px;
+}
+
+.company-box {
+  display: flex;
+  flex-direction: row;
+  border:1px solid;
+  padding: 4px;
+  margin-top:10px;
+}
+
+.company-title {
+  width:30%;
+  margin-right:5px;
+  border-right: 1px solid gray;
+}
+
+.company-title h3, h5 {
+  margin: 2px 3px;
+}
+
+.company-content {
+  width:70%;
+}
+
+.project-box {
+  margin-bottom: 2px;
+}
+
+.project-box .project-name {
+  background-color:#5e5d5b;
+  color:white;
+  margin: 4px 2px;
+  padding-bottom: 4px;
+}
+
+.project-img {
+  width:100%;
+  padding:2px;
+}
+
+.project-img img {
+  width:inherit;
+}
+
+.project-description {
+  width:100%;
+  padding:2px;
+}
+
+.project-description p {
+  padding: 2px 1px;
+  font-family: sans-serif;
+  margin:0
+}
+
+@media (max-width: 800px) {
+  .company-box,
+  .project-box {
+    flex-direction:column;
+  }
+  .company-title,
+  .company-content,
+  .project-box {
+    width:100%;
+  }
+  .company-title {
+    display:flex;
+    flex-direction: row;
+    border:none;
+  }
+  .company-title h5 {
+    border-left: 1px solid gray;
+    margin-left: 4px;
+    padding-left: 4px;
+  }
+}
+
+@media (max-width: 500px) {
+  .box {
+    flex-direction: column;
+  }
+  .box .box-content {
+    width:100%;
+    text-indent: -10px;
+    margin-left: 15px;
+    margin-right:10px;
+  }
+  .box h4 {
+    width: 100%;
+    border-bottom: 1px solid gray;
+    padding-top:5px;
+    padding-bottom:5px;
+  }
+}
