@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Work</title>
+  <link rel="stylesheet" href="../css/cardstyle.css">
+</head>
+
+
+<body>
+  <div class="container-fluid">
+    <div class="company-box">
+      <div class="company-title">
+        <h3>Wayties Inc.</h3>
+        <h5>Cooperative Autonomous Vehicle</h5>
+        <h5>2020.08 - 2021.03</h5>
+      </div>
+      <div class="company-content">
+        <div class="project-box">
+          <h4 class="project-name">WX Board</h4>
+          <div class="project-description">
+            <p>Vehicle to everything (V2X) communication stack protocol message encoding / decoding.
+              Worked with OMG IDL, IEEE 1609.3, 1609.2 and SAE J2735 messages.
+            </p>
+            <div class="box">
+              <h4>Development Environment</h4>
+              <div class="box-content">
+                  <li>C++11, C99</li>
+                  <li>SAE J2735, SAE J2945, IEEE 1609.2, IEEE 1609.3</li>
+                  <li>ASN1, IDL</li>
+                  <li>gtest, CMake</li>
+              </div>
+            </div>
+            <div class="box">
+              <h4>Description</h4>
+              <div class="box-content">
+                  <li>Encode / Decode IEEE 1609.2 Security Message with mandatory field filled</li>
+                  <li>Encode / Decode IEEE 1609.3 WSMP Message with mandatory field filled</li>
+                  <li>Encode / Decode SAE J2735 message set(15 in total)</li>
+                  <li>Used gtest for testing</li>
+                  <li>Code review through pull request</li>
+                  <li>Agile develop was pursued</li>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-box">
+          <h4 class="project-name">Traffic Signal Controller Simulator</h4>
+          <div class="project-img">
+            <img src="../img/traffic_controller.PNG" alt="">
+          </div>
+          <div class="project-description">
+            <p>Project main leader and developer. Web application / node.js
+            based simulator of traffic signal controller for product testing. The simulated signal routed through
+            DDS and parsed into MAP and SPaT of SAE J2735.
+            </p>
+            <div class="box">
+              <h4>Development Environment</h4>
+              <div class="box-content">
+                  <li>Node.js, HTML5, CSS3, JS(ES6)</li>
+                  <li>C++11</li>
+                  <li>ROS2-dashing, Fast-DDS generator, Fast-DDS, Python3, C++</li>
+                  <li>SAE J2735- SPAT, MAP</li>
+              </div>
+            </div>
+            <div class="box">
+              <h4>Description</h4>
+              <div class="box-content">
+                  <li>Signal Simulator : Web-based UI tool generating signal plan</li>
+                  <li>Signal Generator : node.js server generating binary stream every 1s, based on signal plan</li>
+                  <li>Binary2Topic Parser : C++ program parsing binary data to ROS2 topic</li>
+                  <li>SPaT Parser : ROS2 pkg subscribing general signal data, publishing SPaT topic</li>
+                  <li>MAP Parser : ROS2 pkg subscribing general signal data, publishing MAP topic</li>
+                  <li>JSON Parser : ROS2 pkg subscribing general signal data, sending JSON data through websocket</li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="company-box">
+      <div class="company-title">
+        <h3>Naver Corp.</h3>
+        <h5>Digital Contents & Audio Platform</h5>
+        <h5>2017.07 - 2017.08</h5>
+      </div>
+      <div class="company-content">
+        <div class="project-box">
+          <h4 class="project-name">Audio Shortcut</h4>
+          <div class="project-description">
+            <p>Web server application allowing users to pick discontinuous parts in an audio and
+              images. The final product is video of audio, images and subtitles, which users can download.
+            </p>
+            <div class="box">
+              <h4>Development Environment</h4>
+              <div class="box-content">
+                  <li>Node.js, mariaDB</li>
+                  <li>HTML, CSS, JS</li>
+                  <li>FFMPEG</li>
+              </div>
+            </div>
+            <div class="box">
+              <h4>Description</h4>
+              <div class="box-content">
+                  <li>Users pick discontinous parts of audio and images from website</li>
+                  <li>The server will add up all the parts of user picked, into video</li>
+                  <li>User can download video from website as a final product</li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
