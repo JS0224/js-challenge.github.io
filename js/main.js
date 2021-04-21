@@ -1,8 +1,9 @@
 const sidebarCollapse = document.querySelector("#sidebarCollapse");
-const sidebar = document.querySelector("#sidebar");
-const main = document.querySelector("main");
-const frame = document.querySelector("iframe");
-const linkStart = "file:///C:/Users/JISOO/Desktop/personal/study/JS0224.github.io/view/";
+const sidebar         = document.querySelector("#sidebar");
+const main            = document.querySelector("main");
+const frame           = document.querySelector("iframe");
+const linkStart       = "https://js0224.github.io/view/";
+const menuTitle       = main.querySelector(".title-container").querySelector('h3');
 
 const ACTIVE_CL = 'active';
 let selectedMenu = null;
@@ -26,6 +27,7 @@ function addEventSideBarMenu() {
         return;
       }
       else {
+        menuTitle.innerText = e.target.innerText;
         selectedMenu.classList.remove(ACTIVE_CL);
         parent.classList.add(ACTIVE_CL);
         selectedMenu = parent;
